@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+  width: 80%;
+  margin: auto;
+  background-color: #b6a688;
+}
+#title {
+  text-align: center;
+  font-size: 8vh;
+  text-shadow: 2px 3px 2px 5px red;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.945),
+    1px 1px 1px rgba(207, 202, 202, 0.925);
+}
+@media (max-width: 450px) {
+  #title {
+    margin-left: 0;
+    font-size: 4vh;
+  }
+  body {
+    margin: auto;
+    font-size: 1.1rem;
+  }
+  #nav-bar li {
+    min-width: fit-content;
+    overflow: hidden;
+  }
+  #nav-bar li a {
+    font-size: 1rem;
+  }
+  #email {
+    min-width: fit-content;
+    font-size: 1rem;
+  }
+}
+#header {
+  position: sticky;
+  height: fit-content;
+  top: 0;
+  background-color: #b6a688;
+  border-bottom: 2px solid white;
+}
+#header-img {
+  height: 5vh;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+#nav-bar {
+  display: inline-flex;
+  flex-direction: row;
+}
+#nav-bar ul {
+  display: flex;
+  margin: auto;
+}
+#nav-bar li {
+  font-style: italic;
+  font-size: 1.1em;
+  margin: 2px;
+  height: fit-content;
+  border: 2px solid black;
+  width: 20vw;
+  text-align: center;
+  box-shadow: 2px 3px grey;
+  background-color: rgba(109, 87, 45, 0.459);
+  padding: 2px;
+  min-width: fit-content;
+}
+#nav-bar li:hover {
+  background-color: rgba(109, 87, 45, 1);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#nav-bar li a {
+  display: block;
+}
+.subscribe #form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe #form label {
+  height: fit-content;
+  text-align: center;
+  margin: 5px;
+}
+#email {
+  height: 3vh;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 40%;
+  background-color: rgba(109, 87, 45, 0.459);
+  color: rgba(255, 255, 255, 0.856);
+  outline: none;
+}
+#email::placeholder {
+  color: rgba(255, 255, 255, 0.856);
+}
+#submit {
+  margin: 5px;
+  padding: 2px;
+  height: 3vh;
+  background-color: rgba(109, 87, 45, 0.459);
+  outline: none;
+  box-shadow: 2px 2px grey;
+  width: 20vh;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+#submit:hover {
+  transform: scale(1.2);
+}
+#features{
+    text-align: center;
+}
